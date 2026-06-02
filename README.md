@@ -107,8 +107,8 @@ ________________________________________
 The business shows an approximate **40% profit margin**, indicating strong profitability and cost efficiency.
 
 ### Average Order Value (AOV)
-- Calculated using average revenue per order
-- 
+Calculated using average revenue per order
+  
  <img width="337" height="152" alt="image" src="https://github.com/user-attachments/assets/3065d838-06e9-4633-b471-88cb5f8f5447" />
 
 Insight: 
