@@ -25,11 +25,11 @@ ________________________________________
 - Exploratory Data Analysis (EDA)
 - Data aggregation and transformation
 ________________________________________
-## 📊 Dataset Description
+## Dataset Description
 
 The project is based on three main tables:
 
-### 🧾 sales
+### sales
 - order_id  
 - order_date  
 - product_id  
@@ -42,7 +42,7 @@ The project is based on three main tables:
 - cost  
 - profit  
 
-### 🍫 products
+### products
 - product_id  
 - product_name  
 - brand  
@@ -50,7 +50,7 @@ The project is based on three main tables:
 - cocoa_percent  
 - weight_g  
 
-### 🏬 stores
+### stores
 - store_id  
 - store_name  
 - city  
@@ -59,11 +59,11 @@ The project is based on three main tables:
 
 ---
 
-## 🧹 Data Cleaning & Quality Checks
+## Data Cleaning & Quality Checks
 
 The dataset was validated for data quality issues:
 
-### ✅ No issues found:
+### No issues found:
 - No NULL values across all tables
 - No duplicate records in sales data
 - Revenue and profit calculations validated
@@ -74,7 +74,7 @@ revenue = quantity * unit_price * (1 - discount)
 Profit formula:
 profit = revenue - cost
 
-### ⚠️ Data Quality Issues Identified
+### Data Quality Issues Identified
 
 #### 1. Store ID inconsistency
 - `store_id` values between `sales` and `stores` tables were not fully aligned
@@ -89,14 +89,14 @@ profit = revenue - cost
 - A normalization approach (string manipulation) was applied to partially align identifiers
 - This may introduce limitations in product-level analysis
 ________________________________________
-## 📈 Key Performance Indicators (KPIs)
+## Key Performance Indicators (KPIs)
 
 - Total Revenue  
 - Total Profit  
 - Profit Margin  
 - Average Order Value (AOV)  
 
-### 💰 Revenue & Profitability
+### Revenue & Profitability
 - Overall profitability was calculated using aggregated metrics
 - Profit margin formula:
  Profit Margin = Profit / Revenue
@@ -106,7 +106,7 @@ ________________________________________
  Insight: 
 The business shows an approximate **40% profit margin**, indicating strong profitability and cost efficiency.
 
-### 📦 Average Order Value (AOV)
+### Average Order Value (AOV)
 - Calculated using average revenue per order
 - 
  <img width="337" height="152" alt="image" src="https://github.com/user-attachments/assets/3065d838-06e9-4633-b471-88cb5f8f5447" />
@@ -114,9 +114,9 @@ The business shows an approximate **40% profit margin**, indicating strong profi
 Insight: 
 AOV provides an overview of customer spending behavior per transaction.
 
-## 🍫 Product Analysis
+## Product Analysis
 
-### ⚠️ Limitation
+### Limitation
 Due to inconsistent `product_id` formats, reliable JOINs between `sales` and `products` were not possible.
 
 As a result:
@@ -125,30 +125,29 @@ As a result:
 
 <img width="968" height="544" alt="image" src="https://github.com/user-attachments/assets/392d3285-b7b7-45f7-94b9-a2ad6cd5144a" />
 
-### 📌 Observations (exploratory only)
+### Observations (exploratory only)
 - Dark chocolate appears to be the strongest-performing segment
 - Demand is concentrated among a small number of products
 
-📌 **Note:**  
+**Note:**  
 All product-level insights should be interpreted with caution due to data limitations.
 
 
 
-## 🏷 Category Analysis
+## Category Analysis
 
-### ⚠️ Issue
+### Issue
 - Product and sales tables could not be reliably joined
 
  <img width="891" height="316" alt="image" src="https://github.com/user-attachments/assets/1d593e1b-aa71-4581-9ec1-f6bf6d8e764e" />
 
-### 📌 Impact
+### Impact
 - Category-level revenue and profit cannot be accurately calculated
 - Aggregated results may contain duplication or mismatches
  
 
-## 💸 Discount Analysis
+##  Discount Analysis
 
-📌 Key Insight:
 There is a strong negative relationship between discount level and profitability.
 
 - No discount → highest profit (≈ 10.81)
@@ -157,27 +156,27 @@ There is a strong negative relationship between discount level and profitability
 
 <img width="563" height="272" alt="image" src="https://github.com/user-attachments/assets/96c9c2db-2fc1-41a7-a8c6-a151fc36dd60" />
 
-👉 Conclusion:  
+Conclusion:  
 Discounting directly reduces profitability and should be used strategically.
 
 
-## 🌍 Country Analysis
+## Country Analysis
 
-### ⚠️ Issue
+###  Issue
 - Store ID mismatch between `sales` and `stores` tables
 
-### 📌 Impact
+### Impact
 - Country-level revenue and profit may be duplicated or inaccurate
 
 <img width="1075" height="367" alt="image" src="https://github.com/user-attachments/assets/11a63f42-fad1-4233-9245-2bdf948758df" />
  
 
-### 📌 Insight (high-level only)
+### Insight (high-level only)
 - Geographic performance trends can still be observed
 - However, exact values should be interpreted cautiously
 
 
-## 📌 Executive Summary
+## Executive Summary
 
 This project analyzes chocolate sales performance using SQL to evaluate profitability, revenue drivers, and operational trends.
 
@@ -190,14 +189,14 @@ This project analyzes chocolate sales performance using SQL to evaluate profitab
 ### Critical finding:
 Data integrity issues (especially inconsistent product IDs) significantly limited relational analysis.
 
-## ⚠️ Assumptions & Limitations
+## Assumptions & Limitations
 
 - No external data validation was performed
 - Product-level insights are partially unreliable
 - Store-level joins may introduce inaccuracies
 - Analysis is best interpreted at an aggregated level
 
-## 🎯 Key Takeaways
+## Key Takeaways
 
 - The business is profitable and financially stable
 - Discounts significantly impact profitability
@@ -205,7 +204,7 @@ Data integrity issues (especially inconsistent product IDs) significantly limite
 - Aggregated KPIs are more reliable than detailed joins
 
 
-## 💡 Business Recommendations
+## Business Recommendations
 
 - Focus on high-performing segments (e.g., dark chocolate)
 - Reduce excessive discounting to protect margins
