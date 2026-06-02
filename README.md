@@ -7,17 +7,17 @@ The dataset includes transactional data, product information, and store details.
 ________________________________________
 ###Tools and Technologies
 
-1.SQL 
+##SQL 
 
--Aggregations (SUM, AVG, COUNT) 
--GROUP BY 
--CASE WHEN 
+-Aggregations ('SUM', 'AVG', 'COUNT') 
+-'GROUP BY' 
+-'CASE WHEN' 
 -Window Functions 
 -Data Validation Queries 
--JOIN Operations 
-2.Excel / Tableau (data visualization)
+-'JOIN' Operations 
+##Excel / Tableau (data visualization)
 
-3.Data Cleaning & Analysis Techniques 
+##Data Cleaning & Analysis Techniques 
 
 -Data quality checks 
 -Exploratory data analysis (EDA) 
