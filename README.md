@@ -161,10 +161,7 @@ Discounting directly reduces profitability and should be used strategically.
 
 ## Country Analysis
 
-###  Issue
 - Store ID mismatch between `sales` and `stores` tables
-
-### Impact
 - Country-level revenue and profit may be duplicated or inaccurate
 
 <img width="1075" height="367" alt="image" src="https://github.com/user-attachments/assets/11a63f42-fad1-4233-9245-2bdf948758df" />
