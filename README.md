@@ -1,9 +1,10 @@
  Chocolate Sales Analysis
 ________________________________________
-###Project Overview
+## Project Overview
+This project focuses on analyzing chocolate sales data to identify key business drivers, evaluate profitability, and provide actionable insights.  
 
-This project focuses on analyzing sales data to identify key business drivers, evaluate profitability, and provide actionable insights.
-The dataset includes transactional data, product information, and store details. The goal is to understand sales performance across different dimensions such as time, products, stores, and customers.
+The dataset includes transactional data, product information, and store details.  
+The goal is to understand sales performance across multiple dimensions such as time, products, stores, and customers.
 ________________________________________
 ## Tools and Technologies
 
