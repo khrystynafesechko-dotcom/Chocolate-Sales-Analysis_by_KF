@@ -1,22 +1,22 @@
  Chocolate Sales Analysis
 ________________________________________
-	Project Overview
+###Project Overview
 This project focuses on analyzing sales data to identify key business drivers, evaluate profitability, and provide actionable insights.
 The dataset includes transactional data, product information, and store details. The goal is to understand sales performance across different dimensions such as time, products, stores, and customers.
 ________________________________________
-	Tools and Technologies
+###Tools and Technologies
 1.SQL 
-•	Aggregations (SUM, AVG, COUNT) 
-•	GROUP BY 
-•	CASE WHEN 
-•	Window Functions 
-•	Data Validation Queries 
-•	JOIN Operations 
+-Aggregations (SUM, AVG, COUNT) 
+-GROUP BY 
+-CASE WHEN 
+-Window Functions 
+-Data Validation Queries 
+-JOIN Operations 
 2.Excel / Tableau (data visualization) 
 3.Data Cleaning & Analysis Techniques 
-•	Data quality checks 
-•	Exploratory data analysis (EDA) 
-•	Data aggregation and transformation
+-Data quality checks 
+-Exploratory data analysis (EDA) 
+-Data aggregation and transformation
 ________________________________________
 	Dataset Description
 The project is based on three tables:
