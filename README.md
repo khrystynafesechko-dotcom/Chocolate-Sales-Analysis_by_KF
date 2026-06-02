@@ -136,12 +136,11 @@ All product-level insights should be interpreted with caution due to data limita
 
 ## Category Analysis
 
-### Issue
-- Product and sales tables could not be reliably joined
+Product and sales tables could not be reliably joined
 
  <img width="891" height="316" alt="image" src="https://github.com/user-attachments/assets/1d593e1b-aa71-4581-9ec1-f6bf6d8e764e" />
 
-### Impact
+**Note:**  
 - Category-level revenue and profit cannot be accurately calculated
 - Aggregated results may contain duplication or mismatches
  
