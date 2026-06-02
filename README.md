@@ -25,48 +25,69 @@ ________________________________________
 - Exploratory Data Analysis (EDA)
 - Data aggregation and transformation
 ________________________________________
-	Dataset Description
-The project is based on three tables:
-1. sales
-•	order_id 
-•	order_date 
-•	product_id 
-•	store_id 
-•	customer_id 
-•	quantity 
-•	unit_price 
-•	discount 
-•	revenue 
-•	cost 
-•	profit
-2. products
-•	product_id
-•	product_name
-•	brand
-•	category
-•	cocoa_percent
-•	weight_g
-3. stores
-•	store_id
-•	store_name
-•	city
-•	country
-•	store_type
+## 📊 Dataset Description
 
-	Data Cleaning
-The dataset was checked for data quality issues:
-•	No NULL values were found across all columns, indicating complete data coverage.
-•	No duplicates were found, indicating that each order is represented by a single record.
-•	Revenue and profit calculations were validated:
-o	revenue = quantity * unit_price * (1 - discount)
-o	profit = revenue – cost.
-Data Quality Issues
-Critical issue was identified:
-	1.Store ID inconsistency
-The store_id field between sales and stores tables was not fully aligned. This may affect country-level and store-level aggregations (revenue, profit, order counts) and should be interpreted with caution.
+The project is based on three main tables:
 
-	2. Inconsistent Product IDs
-During the analysis, a data inconsistency was identified between the sales and products tables. The product_id field was expected to be a consistent foreign key across both datasets. However, it was found that the ID format differed between tables (e.g., different length and formatting of identifiers). As a result, a direct one-to-one join between sales and products was not possible. To address this issue, a normalization approach was applied during analysis, aligning product identifiers using string manipulation techniques to enable partial matching.
+### 🧾 sales
+- order_id  
+- order_date  
+- product_id  
+- store_id  
+- customer_id  
+- quantity  
+- unit_price  
+- discount  
+- revenue  
+- cost  
+- profit  
+
+### 🍫 products
+- product_id  
+- product_name  
+- brand  
+- category  
+- cocoa_percent  
+- weight_g  
+
+### 🏬 stores
+- store_id  
+- store_name  
+- city  
+- country  
+- store_type  
+
+---
+
+## 🧹 Data Cleaning & Quality Checks
+
+The dataset was validated for data quality issues:
+
+### ✅ No issues found:
+- No NULL values across all tables
+- No duplicate records in sales data
+- Revenue and profit calculations validated
+
+Revenue formula:
+revenue = quantity * unit_price * (1 - discount)
+
+Profit formula:
+profit = revenue - cost
+
+### ⚠️ Data Quality Issues Identified
+
+#### 1. Store ID inconsistency
+- `store_id` values between `sales` and `stores` tables were not fully aligned
+- This affects store-level and country-level aggregations
+- Results should be interpreted with caution
+
+---
+
+#### 2. Product ID inconsistency (critical issue)
+- `product_id` formats differed between `sales` and `products`
+- Direct JOIN was not possible
+- A normalization approach (string manipulation) was applied to partially align identifiers
+- This may introduce limitations in product-level analysis
 ________________________________________
 	Key Metrics (KPI)
 Calculated key business metrics to establish a baseline understanding of overall performance.
