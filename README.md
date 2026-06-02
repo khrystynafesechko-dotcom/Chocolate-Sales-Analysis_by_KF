@@ -89,91 +89,126 @@ profit = revenue - cost
 - A normalization approach (string manipulation) was applied to partially align identifiers
 - This may introduce limitations in product-level analysis
 ________________________________________
-	Key Metrics (KPI)
-Calculated key business metrics to establish a baseline understanding of overall performance.
-•	Total Revenue
-•	Total Profit
-•	Profit Margin
-•	Average Order Value
-Revenue, Profit & Margin Analysis
-•	Computed total revenue, total cost, and total profit  across all sales records.
-•	Calculated  margin as profit / revenue to evaluate overall profitability.
-•	Used aggregated metrics to assess the financial health of the business.
+## 📈 Key Performance Indicators (KPIs)
+
+- Total Revenue  
+- Total Profit  
+- Profit Margin  
+- Average Order Value (AOV)  
+
+### 💰 Revenue & Profitability
+- Overall profitability was calculated using aggregated metrics
+- Profit margin formula:
+ Profit Margin = Profit / Revenue
 
  <img width="984" height="189" alt="image" src="https://github.com/user-attachments/assets/757b422b-e1f0-407b-97cc-cb3d01c266e7" />
 
  Insight: 
-The analysis of 2023–2024 sales data shows a 40% profit margin, confirming that the business is profitable and operates with strong cost efficiency.
+The business shows an approximate **40% profit margin**, indicating strong profitability and cost efficiency.
 
-Average Order Value
-
+### 📦 Average Order Value (AOV)
+- Calculated using average revenue per order
+- 
  <img width="337" height="152" alt="image" src="https://github.com/user-attachments/assets/3065d838-06e9-4633-b471-88cb5f8f5447" />
 
 Insight: 
-AOV calculated as AVG(revenue), assuming revenue is at order-level granularity.
+AOV provides an overview of customer spending behavior per transaction.
 
-	Product Analysis
-Top 10 Products by Revenue and Profit
-During the analysis, a data quality issue was identified between the sales and products tables. Due to inconsistent product_id values, a reliable join between these datasets could not be established. As a result, product-level and category-level analysis could not be performed accurately, as joins produce duplicated or mismatched records, leading to unreliable aggregated results.
+## 🍫 Product Analysis
+
+### ⚠️ Limitation
+Due to inconsistent `product_id` formats, reliable JOINs between `sales` and `products` were not possible.
+
+As a result:
+- Product-level analysis is partially limited
+- Aggregated insights may contain inconsistencies
 
 <img width="968" height="544" alt="image" src="https://github.com/user-attachments/assets/392d3285-b7b7-45f7-94b9-a2ad6cd5144a" />
 
-Insight: 
-Due to data inconsistency between sales and products tables, product-level analysis was not fully reliable. However, exploratory analysis suggests: 
-•	Dark chocolate appears to be the strongest-performing segment 
-•	Product demand is concentrated among a small number of items 
-These results should be interpreted with caution due to data limitations.
+### 📌 Observations (exploratory only)
+- Dark chocolate appears to be the strongest-performing segment
+- Demand is concentrated among a small number of products
+
+📌 **Note:**  
+All product-level insights should be interpreted with caution due to data limitations.
 
 
-	Category Analysis
-A critical issue was identified in the dataset: the sales and products tables do not share a reliable and consistent foreign key relationship. Attempts to standardize and match product_id values resulted in incorrect joins and data duplication, leading to inflated metric calculations.
+
+## 🏷 Category Analysis
+
+### ⚠️ Issue
+- Product and sales tables could not be reliably joined
 
  <img width="891" height="316" alt="image" src="https://github.com/user-attachments/assets/1d593e1b-aa71-4581-9ec1-f6bf6d8e764e" />
 
-Insight: 
-Due to this inconsistency, product-level metrics such as revenue, profit, and quantity by product category could not be accurately calculated. Any results derived from attempted joins should be interpreted with caution, as they may include duplicated or mismatched records.
+### 📌 Impact
+- Category-level revenue and profit cannot be accurately calculated
+- Aggregated results may contain duplication or mismatches
  
 
-	Discount Analysis
+## 💸 Discount Analysis
+
+📌 Key Insight:
+There is a strong negative relationship between discount level and profitability.
+
+- No discount → highest profit (≈ 10.81)
+- Low discount → moderate profit (≈ 9.71)
+- Medium discount → lower profit (≈ 8.91)
 
 <img width="563" height="272" alt="image" src="https://github.com/user-attachments/assets/96c9c2db-2fc1-41a7-a8c6-a151fc36dd60" />
 
- Insight:
-The results highlight a strong negative correlation between discount depth and profitability. No-discount orders achieve the highest average profit (10.81), while profitability declines progressively with low (9.71) and medium (8.91) discount levels. This indicates that discounting has a direct impact on margin erosion and should be strategically controlled to maintain profitability.
+👉 Conclusion:  
+Discounting directly reduces profitability and should be used strategically.
 
 
-	Country Analysis
+## 🌍 Country Analysis
+
+### ⚠️ Issue
+- Store ID mismatch between `sales` and `stores` tables
+
+### 📌 Impact
+- Country-level revenue and profit may be duplicated or inaccurate
 
 <img width="1075" height="367" alt="image" src="https://github.com/user-attachments/assets/11a63f42-fad1-4233-9245-2bdf948758df" />
  
-Insight:
-A data consistency issue was identified between the sales and stores tables. 
-The store_id values were not fully aligned across datasets, which prevented a reliable one-to-one join. As a result, country-level metrics such as revenue, profit, and order counts may contain duplicated values and should be interpreted with caution.
+
+### 📌 Insight (high-level only)
+- Geographic performance trends can still be observed
+- However, exact values should be interpreted cautiously
 
 
+## 📌 Executive Summary
 
-	Executive Summary
-This project analyzes chocolate sales performance using SQL.
-The goal was to evaluate business profitability, identify key revenue drivers, and assess product and geographic performance.
-While core KPIs and country-level analysis were successfully completed, data quality issues prevented reliable product-level and category-level aggregation.
-This project demonstrates an end-to-end SQL analysis of sales data, including KPI calculation, exploratory analysis, and data quality assessment.
-A critical limitation was identified in the dataset: inconsistent product identifiers prevented reliable product-level joins. Instead of forcing incorrect results, the analysis was adjusted to focus on accurate, transaction-level.
-This highlights the importance of data integrity and proper relational design in analytical systems.
+This project analyzes chocolate sales performance using SQL to evaluate profitability, revenue drivers, and operational trends.
 
-	Assumptions & Limitations
-•	Analysis is based on available transactional data without external validation 
-•	Product-level and category-level insights are limited due to inconsistent identifiers 
-•	Results should be interpreted at an aggregated level only
+### Key outcomes:
+- Strong overall profitability (~40% margin)
+- Clear impact of discounting on profit reduction
+- Some reliable high-level insights (KPIs, trends)
+- Limited product and category-level analysis due to data quality issues
 
-	Key Takeaways
-•	The business is profitable with a stable ~40% margin 
-•	Geographic analysis is more reliable than product-level analysis due to data limitations 
-•	Data quality issues significantly impact analytical depth 
-•	Proper data modeling is critical for accurate business insights
+### Critical finding:
+Data integrity issues (especially inconsistent product IDs) significantly limited relational analysis.
+
+## ⚠️ Assumptions & Limitations
+
+- No external data validation was performed
+- Product-level insights are partially unreliable
+- Store-level joins may introduce inaccuracies
+- Analysis is best interpreted at an aggregated level
+
+## 🎯 Key Takeaways
+
+- The business is profitable and financially stable
+- Discounts significantly impact profitability
+- Data modeling quality is critical for analytics success
+- Aggregated KPIs are more reliable than detailed joins
 
 
-	Business Recommendations
-•	Focus on high-performing segments (e.g., Dark chocolate) as primary revenue drivers 
-•	Improve data governance to ensure consistent product and store identifiers 
-•	Implement a standardized product mapping system to enable reliable product-level analytics 
-•	Enhance data validation processes to avoid future join inconsistencies
+## 💡 Business Recommendations
+
+- Focus on high-performing segments (e.g., dark chocolate)
+- Reduce excessive discounting to protect margins
+- Improve data governance for product and store IDs
+- Implement standardized primary keys across all tables
+- Strengthen data validation processes before analysis
