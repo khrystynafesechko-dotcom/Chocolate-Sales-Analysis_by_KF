@@ -5,23 +5,24 @@ ________________________________________
 This project focuses on analyzing sales data to identify key business drivers, evaluate profitability, and provide actionable insights.
 The dataset includes transactional data, product information, and store details. The goal is to understand sales performance across different dimensions such as time, products, stores, and customers.
 ________________________________________
-###Tools and Technologies
+## Tools and Technologies
 
-##SQL 
+### SQL
+- Aggregations (`SUM`, `AVG`, `COUNT`)
+- `GROUP BY`
+- `CASE WHEN`
+- Window Functions
+- Data validation queries
+- JOIN operations
 
--Aggregations ('SUM', 'AVG', 'COUNT') 
--'GROUP BY' 
--'CASE WHEN' 
--Window Functions 
--Data Validation Queries 
--'JOIN' Operations 
-##Excel / Tableau (data visualization)
+### Data Visualization
+- Excel
+- Tableau
 
-##Data Cleaning & Analysis Techniques 
-
--Data quality checks 
--Exploratory data analysis (EDA) 
--Data aggregation and transformation
+### Data Analysis Techniques
+- Data cleaning and validation
+- Exploratory Data Analysis (EDA)
+- Data aggregation and transformation
 ________________________________________
 	Dataset Description
 The project is based on three tables:
