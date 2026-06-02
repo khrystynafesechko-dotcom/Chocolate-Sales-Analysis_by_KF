@@ -1,4 +1,4 @@
- Chocolate Sales Analysis
+# 🍫 Chocolate Sales Analysis
 ________________________________________
 ## Project Overview
 This project focuses on analyzing chocolate sales data to identify key business drivers, evaluate profitability, and provide actionable insights.  
