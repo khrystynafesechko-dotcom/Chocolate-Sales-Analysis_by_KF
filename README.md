@@ -72,21 +72,23 @@ Revenue, Profit & Margin Analysis
 •	Calculated  margin as profit / revenue to evaluate overall profitability.
 •	Used aggregated metrics to assess the financial health of the business.
 
- 
+ <img width="984" height="189" alt="image" src="https://github.com/user-attachments/assets/757b422b-e1f0-407b-97cc-cb3d01c266e7" />
+
  Insight: 
 The analysis of 2023–2024 sales data shows a 40% profit margin, confirming that the business is profitable and operates with strong cost efficiency.
 
 Average Order Value
- 
+
+ <img width="337" height="152" alt="image" src="https://github.com/user-attachments/assets/3065d838-06e9-4633-b471-88cb5f8f5447" />
+
 Insight: 
 AOV calculated as AVG(revenue), assuming revenue is at order-level granularity.
-
 
 	Product Analysis
 Top 10 Products by Revenue and Profit
 During the analysis, a data quality issue was identified between the sales and products tables. Due to inconsistent product_id values, a reliable join between these datasets could not be established. As a result, product-level and category-level analysis could not be performed accurately, as joins produce duplicated or mismatched records, leading to unreliable aggregated results.
 
- 
+<img width="968" height="544" alt="image" src="https://github.com/user-attachments/assets/392d3285-b7b7-45f7-94b9-a2ad6cd5144a" />
 
 Insight: 
 Due to data inconsistency between sales and products tables, product-level analysis was not fully reliable. However, exploratory analysis suggests: 
@@ -98,21 +100,23 @@ These results should be interpreted with caution due to data limitations.
 	Category Analysis
 A critical issue was identified in the dataset: the sales and products tables do not share a reliable and consistent foreign key relationship. Attempts to standardize and match product_id values resulted in incorrect joins and data duplication, leading to inflated metric calculations.
 
- 
-
-
+ <img width="891" height="316" alt="image" src="https://github.com/user-attachments/assets/1d593e1b-aa71-4581-9ec1-f6bf6d8e764e" />
 
 Insight: 
 Due to this inconsistency, product-level metrics such as revenue, profit, and quantity by product category could not be accurately calculated. Any results derived from attempted joins should be interpreted with caution, as they may include duplicated or mismatched records.
  
 
 	Discount Analysis
- 
-Insight:
+
+<img width="563" height="272" alt="image" src="https://github.com/user-attachments/assets/96c9c2db-2fc1-41a7-a8c6-a151fc36dd60" />
+
+ Insight:
 The results highlight a strong negative correlation between discount depth and profitability. No-discount orders achieve the highest average profit (10.81), while profitability declines progressively with low (9.71) and medium (8.91) discount levels. This indicates that discounting has a direct impact on margin erosion and should be strategically controlled to maintain profitability.
 
 
 	Country Analysis
+
+<img width="1075" height="367" alt="image" src="https://github.com/user-attachments/assets/11a63f42-fad1-4233-9245-2bdf948758df" />
  
 Insight:
 A data consistency issue was identified between the sales and stores tables. 
