@@ -172,6 +172,9 @@ Discounting directly reduces profitability and should be used strategically.
 - However, exact values should be interpreted cautiously
 
 
+Dashboard1.png
+
+
 ## Executive Summary
 
 This project analyzes chocolate sales performance using SQL to evaluate profitability, revenue drivers, and operational trends.
