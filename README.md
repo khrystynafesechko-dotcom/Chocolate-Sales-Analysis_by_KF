@@ -172,7 +172,7 @@ Discounting directly reduces profitability and should be used strategically.
 - However, exact values should be interpreted cautiously
 
 
-Dashboard1.png
+[Dashboard1.png](https://github.com/khrystynafesechko-dotcom/Chocolate-Sales-Analysis_by_KF/blob/main/Dashboard1.png)
 
 
 ## Executive Summary
