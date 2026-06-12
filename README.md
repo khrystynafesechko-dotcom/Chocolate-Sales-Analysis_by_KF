@@ -107,6 +107,7 @@ Calculated using average revenue per order
  **Insight:**
 AOV provides an overview of customer spending behavior per transaction.
 
+__________________________________________
 ## Product Analysis
 Analyzed product performance to identify key revenue and profit drivers across the product portfolio.
 Product-level analysis was conducted in Tableau using data relationships and transformation techniques due to inconsistencies in the product_id field between the sales and products datasets. While this approach enabled the analysis, product-level results should be interpreted with caution as some matches may be affected by the underlying data quality issues.
@@ -135,7 +136,24 @@ Product-level analysis was conducted in Tableau using data relationships and tra
 
  **Insight:**
  Milk Chocolate 90% has the highest profit margin, indicating strong profitability despite potentially lower sales volume.
+ 
+______________________________________________
+## Country Analysis
+Country-level analysis is based on aggregated data after resolving inconsistencies in underlying identifiers. Results should be interpreted with consideration of data limitations.
 
+<img width="1090" height="419" alt="image" src="https://github.com/user-attachments/assets/b6d9bff0-7569-4704-8a75-b5ee92627041" />
+
+ **Insight:**
+Canada is the top-performing country in terms of both revenue and profit from chocolate sales.
+
+**Profit Margin by Country**
+
+<img width="881" height="378" alt="image" src="https://github.com/user-attachments/assets/787758fb-80e6-47c1-9dc9-de4567060d2e" />
+
+ **Insight:**
+ The highest profit margin is observed in the United Kingdom.
+ 
+ _________________________________________________
 ##  Discount Analysis
 
 There is a strong negative relationship between discount level and profitability.
@@ -146,22 +164,8 @@ There is a strong negative relationship between discount level and profitability
 
 <img width="563" height="272" alt="image" src="https://github.com/user-attachments/assets/96c9c2db-2fc1-41a7-a8c6-a151fc36dd60" />
 
-Conclusion:  
+ **Insight:**  
 Discounting directly reduces profitability and should be used strategically.
-
-
-## Country Analysis
-
-- Store ID mismatch between `sales` and `stores` tables
-- Country-level revenue and profit may be duplicated or inaccurate
-
-<img width="1075" height="367" alt="image" src="https://github.com/user-attachments/assets/11a63f42-fad1-4233-9245-2bdf948758df" />
- 
-
-### Insight (high-level only)
-- Geographic performance trends can still be observed
-- However, exact values should be interpreted cautiously
-
 
 ![Dashboard](Dashboard1.png)
 
