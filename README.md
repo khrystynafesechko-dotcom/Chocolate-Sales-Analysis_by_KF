@@ -96,7 +96,7 @@ ________________________________________
 
  <img width="984" height="189" alt="image" src="https://github.com/user-attachments/assets/757b422b-e1f0-407b-97cc-cb3d01c266e7" />
 
- Insight: 
+ **Insight:** 
 The business shows an approximate **40% profit margin**, indicating strong profitability and cost efficiency.
 
 ### Average Order Value (AOV)
@@ -104,34 +104,37 @@ Calculated using average revenue per order
   
  <img width="337" height="152" alt="image" src="https://github.com/user-attachments/assets/3065d838-06e9-4633-b471-88cb5f8f5447" />
 
-Insight: 
+ **Insight:**
 AOV provides an overview of customer spending behavior per transaction.
 
 ## Product Analysis
 Analyzed product performance to identify key revenue and profit drivers across the product portfolio.
 Product-level analysis was conducted in Tableau using data relationships and transformation techniques due to inconsistencies in the product_id field between the sales and products datasets. While this approach enabled the analysis, product-level results should be interpreted with caution as some matches may be affected by the underlying data quality issues.
 
-###Top 10 Products by Revenue and Profit
+**Top 10 Products by Revenue and Profit**
 
 <img width="1090" height="353" alt="image" src="https://github.com/user-attachments/assets/96ff9a7d-30c1-4e02-82b2-f673577eaf1b" />
 
 <img width="1090" height="336" alt="image" src="https://github.com/user-attachments/assets/d8ee06fb-1dcb-4d90-a4b1-6066e2d6e43d" />
 
 
- Insight:
+ **Insight:**
  The product performance analysis revealed that a small group of products contributed the most to overall revenue and profit, with Dark Chocolate 50% emerging as the leading product in both metrics.
 
 
-## Category Analysis
+**Category Analysis**
 
-Product and sales tables could not be reliably joined
+<img width="1090" height="344" alt="image" src="https://github.com/user-attachments/assets/8ff583c9-e79d-4a2b-9107-5f6245ae9660" />
 
- <img width="891" height="316" alt="image" src="https://github.com/user-attachments/assets/1d593e1b-aa71-4581-9ec1-f6bf6d8e764e" />
+ **Insight:**
+ Based on the product category analysis, Proline emerged as the leading category, generating the highest revenue and profit.
 
-**Note:**  
-- Category-level revenue and profit cannot be accurately calculated
-- Aggregated results may contain duplication or mismatches
- 
+**Profit Margin by Product**
+
+<img width="1090" height="482" alt="image" src="https://github.com/user-attachments/assets/e7be1909-3b5d-4dab-8d74-dcc36c1fbbdf" />
+
+ **Insight:**
+ Milk Chocolate 90% has the highest profit margin, indicating strong profitability despite potentially lower sales volume.
 
 ##  Discount Analysis
 
