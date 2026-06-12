@@ -75,11 +75,12 @@ Profit formula:
 profit = revenue - cost
 
 ### Data Quality Issues Identified
+During the analysis, the following data quality issues were identified:
+#### 1. Store ID Inconsistency
+The store_id field was not fully consistent between the sales and stores datasets. This may have affected store-level and country-level aggregations, including revenue, profit, and order count metrics. Results based on these dimensions should therefore be interpreted with caution.
+#### 2.Product ID Inconsistency
+The product_id field was not standardized across the sales and products datasets, resulting in differences in identifier formatting. Due to this inconsistency, product data could not be directly matched using a standard database join. To support the analysis, product information was integrated and validated within Tableau using data relationships and transformation techniques. While this approach enabled product-level analysis, some results may be affected by the underlying data quality limitations.
 
-#### 1. Store ID inconsistency
-- `store_id` values between `sales` and `stores` tables were not fully aligned
-- This affects store-level and country-level aggregations
-- Results should be interpreted with caution
 
 ---
 
@@ -115,23 +116,18 @@ Insight:
 AOV provides an overview of customer spending behavior per transaction.
 
 ## Product Analysis
+Analyzed product performance to identify key revenue and profit drivers across the product portfolio.
+Product-level analysis was conducted in Tableau using data relationships and transformation techniques due to inconsistencies in the product_id field between the sales and products datasets. While this approach enabled the analysis, product-level results should be interpreted with caution as some matches may be affected by the underlying data quality issues.
 
-### Limitation
-Due to inconsistent `product_id` formats, reliable JOINs between `sales` and `products` were not possible.
+###Top 10 Products by Revenue and Profit
 
-As a result:
-- Product-level analysis is partially limited
-- Aggregated insights may contain inconsistencies
+<img width="1090" height="353" alt="image" src="https://github.com/user-attachments/assets/96ff9a7d-30c1-4e02-82b2-f673577eaf1b" />
 
-<img width="968" height="544" alt="image" src="https://github.com/user-attachments/assets/392d3285-b7b7-45f7-94b9-a2ad6cd5144a" />
+<img width="1090" height="336" alt="image" src="https://github.com/user-attachments/assets/d8ee06fb-1dcb-4d90-a4b1-6066e2d6e43d" />
 
-### Observations (exploratory only)
-- Dark chocolate appears to be the strongest-performing segment
-- Demand is concentrated among a small number of products
 
-**Note:**  
-All product-level insights should be interpreted with caution due to data limitations.
-
+ Insight:
+ The product performance analysis revealed that a small group of products contributed the most to overall revenue and profit, with Dark Chocolate 50% emerging as the leading product in both metrics.
 
 
 ## Category Analysis
