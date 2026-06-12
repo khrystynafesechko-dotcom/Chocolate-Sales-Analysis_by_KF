@@ -132,7 +132,7 @@ Product-level analysis was conducted in Tableau using data relationships and tra
 
 **Profit Margin by Product**
 
-<img width="1090" height="482" alt="image" src="https://github.com/user-attachments/assets/e7be1909-3b5d-4dab-8d74-dcc36c1fbbdf" />
+<img width="1090" height="469" alt="image" src="https://github.com/user-attachments/assets/f3244617-4930-468d-8646-9d4585482f39" />
 
  **Insight:**
  Milk Chocolate 90% has the highest profit margin, indicating strong profitability despite potentially lower sales volume.
@@ -148,7 +148,7 @@ Canada is the top-performing country in terms of both revenue and profit from ch
 
 **Profit Margin by Country**
 
-<img width="881" height="378" alt="image" src="https://github.com/user-attachments/assets/787758fb-80e6-47c1-9dc9-de4567060d2e" />
+<img width="889" height="369" alt="image" src="https://github.com/user-attachments/assets/653aa297-69ac-4cf2-b5ab-d805a6f1fcb5" />
 
  **Insight:**
  The highest profit margin is observed in the United Kingdom.
