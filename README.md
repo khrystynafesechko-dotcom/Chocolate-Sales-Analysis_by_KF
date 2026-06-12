@@ -81,14 +81,6 @@ The store_id field was not fully consistent between the sales and stores dataset
 #### 2.Product ID Inconsistency
 The product_id field was not standardized across the sales and products datasets, resulting in differences in identifier formatting. Due to this inconsistency, product data could not be directly matched using a standard database join. To support the analysis, product information was integrated and validated within Tableau using data relationships and transformation techniques. While this approach enabled product-level analysis, some results may be affected by the underlying data quality limitations.
 
-
----
-
-#### 2. Product ID inconsistency (critical issue)
-- `product_id` formats differed between `sales` and `products`
-- Direct JOIN was not possible
-- A normalization approach (string manipulation) was applied to partially align identifiers
-- This may introduce limitations in product-level analysis
 ________________________________________
 ## Key Performance Indicators (KPIs)
 
