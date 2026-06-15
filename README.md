@@ -166,25 +166,25 @@ There is a strong negative relationship between discount level and profitability
 
  **Insight:**  
 Discounting directly reduces profitability and should be used strategically.
-
+________________________________________________________
 ## Dashboard
 The Tableau dashboard visualizes the results of the sales analysis, including key KPIs, profit trends, top products, brand performance, and geographic distribution of sales.
 
 ![Dashboard](Dashboard1.png)
 
-
+_______________________________________________________
 ## Executive Summary
 
-This project analyzes chocolate sales performance using SQL to evaluate profitability, revenue drivers, and operational trends.
+This project analyzes chocolate sales performance using SQL.
+The goal was to evaluate business profitability, identify key revenue drivers, and assess product and geographic performance.
+While core KPIs and country-level analysis were successfully completed, limitations in data integration within PostgreSQL—specifically inconsistent joins across product-related tables—prevented the construction of a reliable product and category-level view. To ensure analytical integrity, the scope was adjusted and the analysis was completed in Tableau using validated transaction-level data. As a result, insights at the product level should be interpreted as directional rather than definitive due to underlying data modeling constraints.
 
 ### Key outcomes:
 - Strong overall profitability (~40% margin)
 - Clear impact of discounting on profit reduction
 - Some reliable high-level insights (KPIs, trends)
-- Limited product and category-level analysis due to data quality issues
+- 
 
-### Critical finding:
-Data integrity issues (especially inconsistent product IDs) significantly limited relational analysis.
 
 ## Assumptions & Limitations
 
