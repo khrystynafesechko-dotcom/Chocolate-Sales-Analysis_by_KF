@@ -167,6 +167,9 @@ There is a strong negative relationship between discount level and profitability
  **Insight:**  
 Discounting directly reduces profitability and should be used strategically.
 
+## Dashboard
+The Tableau dashboard visualizes the results of the sales analysis, including key KPIs, profit trends, top products, brand performance, and geographic distribution of sales.
+
 ![Dashboard](Dashboard1.png)
 
 
