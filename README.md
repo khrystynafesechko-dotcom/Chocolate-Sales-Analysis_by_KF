@@ -173,21 +173,24 @@ The Tableau dashboard visualizes the results of the sales analysis, including ke
 ![Dashboard](Dashboard1.png)
 
 _______________________________________________________
-## Executive Summary
+##**Executive Summary**
 
-This project analyzes chocolate sales performance using SQL.
-The goal was to evaluate business profitability, identify key revenue drivers, and assess product and geographic performance.
-While core KPIs and country-level analysis were successfully completed, limitations in data integration within PostgreSQL—specifically inconsistent joins across product-related tables—prevented the construction of a reliable product and category-level view. To ensure analytical integrity, the scope was adjusted and the analysis was completed in Tableau using validated transaction-level data. As a result, insights at the product level should be interpreted as directional rather than definitive due to underlying data modeling constraints.
+This project analyzes chocolate sales performance using SQL and Tableau.
+While core KPIs and country-level analysis were successfully completed in PostgreSQL, limitations in data integration—specifically inconsistent joins across product-related tables—prevented the construction of a reliable product and category-level view.
 
+To ensure analytical integrity, the scope was adjusted, and product-level analysis was completed in Tableau using validated transaction-level data.
+
+As a result, product-level insights should be interpreted as directional rather than definitive due to underlying data modeling constraints.
 
 __________________________________________________________
-### Key outcomes:
--Built an end-to-end sales analytics pipeline using SQL and Tableau
--Calculated and validated core business KPIs including revenue, profit, and profit margin
--Identified key revenue drivers at the country and product level (directional insights)
--Developed an interactive Tableau dashboard for visual exploration of sales performance
--Conducted data quality assessment and identified limitations in product-level data integration
--Ensured analytical integrity by adapting the scope based on data modeling constraints
+##**Key Outcomes**
+
+• Built an end-to-end analytics pipeline using SQL and Tableau
+• Defined and validated core business KPIs
+• Identified key revenue drivers at the country and product level (directional insights)
+• Developed an interactive Tableau dashboard for exploratory analysis
+• Performed data quality assessment and identified data integration limitations
+• Adapted the analytical scope to ensure data integrity and reliable insights
 
 _____________________________________________________________
 ## Assumptions & Limitations
