@@ -173,24 +173,25 @@ The Tableau dashboard visualizes the results of the sales analysis, including ke
 ![Dashboard](Dashboard1.png)
 
 _______________________________________________________
-##**Executive Summary**
+## Executive Summary
 
 This project analyzes chocolate sales performance using SQL and Tableau.
-While core KPIs and country-level analysis were successfully completed in PostgreSQL, limitations in data integration—specifically inconsistent joins across product-related tables—prevented the construction of a reliable product and category-level view.
 
-To ensure analytical integrity, the scope was adjusted, and product-level analysis was completed in Tableau using validated transaction-level data.
+- While core KPIs and country-level analysis were successfully completed in PostgreSQL, limitations in data integration—specifically inconsistent joins across product-related tables—prevented the development of a reliable product and category-level view.
 
-As a result, product-level insights should be interpreted as directional rather than definitive due to underlying data modeling constraints.
+- To ensure analytical integrity, the scope of the analysis was adjusted, and product-level exploration was completed in Tableau using validated transaction-level data.
+
+- As a result, product-level insights should be interpreted as directional rather than definitive due to underlying data modeling constraints.
 
 __________________________________________________________
-##**Key Outcomes**
+## Key Outcomes
 
-• Built an end-to-end analytics pipeline using SQL and Tableau
-• Defined and validated core business KPIs
-• Identified key revenue drivers at the country and product level (directional insights)
-• Developed an interactive Tableau dashboard for exploratory analysis
-• Performed data quality assessment and identified data integration limitations
-• Adapted the analytical scope to ensure data integrity and reliable insights
+- Built an end-to-end analytics pipeline using SQL and Tableau  
+- Defined and validated core business KPIs  
+- Identified key revenue drivers at the country and product level (directional insights)  
+- Developed an interactive Tableau dashboard for exploratory analysis  
+- Performed data quality assessment and identified data integration limitations  
+- Adapted the analytical scope to ensure data integrity and reliable insights  
 
 _____________________________________________________________
 ## Assumptions & Limitations
@@ -198,7 +199,7 @@ _____________________________________________________________
 - No external data validation was performed  
 - Product-level insights are partially unreliable  
 - Joins at the product and country levels may introduce aggregation inaccuracies  
-- The analysis is best interpreted at an aggregated level  
+- The analysis is best interpreted at an aggregated level    
 
 ___________________________________________________________
 ## Key Takeaways
@@ -206,13 +207,13 @@ ___________________________________________________________
 - The business demonstrates overall profitability and financial stability  
 - Discount strategies have a significant impact on profitability and should be carefully managed  
 - Data modeling quality is a critical factor in ensuring reliable analytical outcomes  
-- Aggregated KPIs provide more reliable insights compared to granular-level joins due to data limitations
+- Aggregated KPIs provide more reliable insights compared to granular-level joins due to data limitations  
 
 __________________________________________________
 ## Business Recommendations
 
-- Focus on high-performing segments (e.g., dark chocolate)
-- Reduce excessive discounting to protect margins
-- Improve data governance for product and store IDs
-- Implement standardized primary keys across all tables
-- Strengthen data validation processes before analysis
+- Focus on high-performing segments (e.g., dark chocolate)  
+- Reduce excessive discounting to protect margins  
+- Improve data governance for product and store IDs  
+- Implement standardized primary keys across all tables  
+- Strengthen data validation processes before analysis  
