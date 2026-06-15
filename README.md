@@ -170,8 +170,8 @@ ________________________________________________________
 ## Dashboard
 The Tableau dashboard visualizes the results of the sales analysis, including key KPIs, profit trends, top products, brand performance, and geographic distribution of sales.
 
-![Dashboard](<img width="1090" height="613" alt="image" src="https://github.com/user-attachments/assets/42da4187-64fe-439a-836c-f50b4390f6d6" />
-)
+![Dashboard](<img width="1090" height="613" alt="image" src="https://github.com/user-attachments/assets/42da4187-64fe-439a-836c-f50b4390f6d6" />)
+
 
 _______________________________________________________
 ## Executive Summary
