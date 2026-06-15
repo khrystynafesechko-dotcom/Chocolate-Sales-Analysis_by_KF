@@ -179,28 +179,33 @@ This project analyzes chocolate sales performance using SQL.
 The goal was to evaluate business profitability, identify key revenue drivers, and assess product and geographic performance.
 While core KPIs and country-level analysis were successfully completed, limitations in data integration within PostgreSQL—specifically inconsistent joins across product-related tables—prevented the construction of a reliable product and category-level view. To ensure analytical integrity, the scope was adjusted and the analysis was completed in Tableau using validated transaction-level data. As a result, insights at the product level should be interpreted as directional rather than definitive due to underlying data modeling constraints.
 
+
+__________________________________________________________
 ### Key outcomes:
-- Strong overall profitability (~40% margin)
-- Clear impact of discounting on profit reduction
-- Some reliable high-level insights (KPIs, trends)
-- 
+-Built an end-to-end sales analytics pipeline using SQL and Tableau
+-Calculated and validated core business KPIs including revenue, profit, and profit margin
+-Identified key revenue drivers at the country and product level (directional insights)
+-Developed an interactive Tableau dashboard for visual exploration of sales performance
+-Conducted data quality assessment and identified limitations in product-level data integration
+-Ensured analytical integrity by adapting the scope based on data modeling constraints
 
-
+_____________________________________________________________
 ## Assumptions & Limitations
 
-- No external data validation was performed
-- Product-level insights are partially unreliable
-- Store-level joins may introduce inaccuracies
-- Analysis is best interpreted at an aggregated level
+- No external data validation was performed  
+- Product-level insights are partially unreliable  
+- Joins at the product and country levels may introduce aggregation inaccuracies  
+- The analysis is best interpreted at an aggregated level  
 
+___________________________________________________________
 ## Key Takeaways
 
-- The business is profitable and financially stable
-- Discounts significantly impact profitability
-- Data modeling quality is critical for analytics success
-- Aggregated KPIs are more reliable than detailed joins
+- The business demonstrates overall profitability and financial stability  
+- Discount strategies have a significant impact on profitability and should be carefully managed  
+- Data modeling quality is a critical factor in ensuring reliable analytical outcomes  
+- Aggregated KPIs provide more reliable insights compared to granular-level joins due to data limitations
 
-
+__________________________________________________
 ## Business Recommendations
 
 - Focus on high-performing segments (e.g., dark chocolate)
